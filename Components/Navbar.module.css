@@ -1,26 +1,17 @@
-.main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+.nav {
   background: #aec8a4;
   width: 100%;
+  min-height: 70px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
 }
-.main h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #3b3b1a;
+.logo {
+  position: relative;
+  width: 150px;
+  height: 120px;
 }
 
-.main p {
-  font-size: 1.125rem;
-  color: #3b3b1a;
-  margin-bottom: 2rem;
-}
-
-.main button {
+.login button {
   background-color: #fff;
   color: #3b3b1a;
   font-weight: 600;
@@ -33,13 +24,13 @@
   box-shadow: 0 4px 6px rgba(79, 70, 229, 0.4);
 }
 
-.main button:hover {
+.login button:hover {
   background-color: #574d37;
   box-shadow: 0 6px 12px rgba(67, 56, 202, 0.6);
   color: white;
 }
 
-.main button:focus {
+.login button:focus {
   outline: 2px solid #a5b4fc;
   outline-offset: 2px;
 }
