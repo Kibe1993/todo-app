@@ -1,0 +1,39 @@
+.row {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+.row:hover {
+  background-color: #f9f9f9;
+}
+
+.cellHeader {
+  padding: 12px 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #111;
+  text-align: left;
+}
+
+.cell {
+  padding: 12px 16px;
+  color: #444;
+  text-align: left;
+}
+
+/* Optional button styling inside the last cell */
+.cell button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  background-color: #f3f4f6;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.cell button:hover {
+  background-color: #e2e8f0;
+}

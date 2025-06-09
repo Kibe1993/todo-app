@@ -43,3 +43,8 @@
   outline: 2px solid #a5b4fc;
   outline-offset: 2px;
 }
+.inputOutput {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

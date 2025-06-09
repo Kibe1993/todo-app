@@ -1,6 +1,8 @@
+import { useState } from "react";
 import classes from "./Dashboard.module.css";
 
-export default function Dashboard() {
+export default function Dashboard({ handleInputChange, formData, onSubmit }) {
+  const { title, description, date } = formData;
   return (
     <section className={classes.section}>
       <header className={classes.header}>
@@ -8,7 +10,7 @@ export default function Dashboard() {
       </header>
 
       <main>
-        <form className={classes.form}>
+        <form className={classes.form} onSubmit={onSubmit}>
           <div className={classes.inputGroup}>
             <label htmlFor="title">Title</label>
             <input
@@ -16,6 +18,9 @@ export default function Dashboard() {
               id="title"
               placeholder="Enter todo title"
               required
+              name="title"
+              onChange={handleInputChange}
+              value={title}
             />
           </div>
 
@@ -25,12 +30,22 @@ export default function Dashboard() {
               id="description"
               placeholder="Enter description"
               required
+              name="description"
+              onChange={handleInputChange}
+              value={description}
             />
           </div>
 
           <div className={classes.inputGroup}>
             <label htmlFor="date">Date</label>
-            <input type="date" id="date" required />
+            <input
+              type="date"
+              id="date"
+              required
+              name="date"
+              onChange={handleInputChange}
+              value={date}
+            />
           </div>
 
           <button type="submit" className={classes.button}>
